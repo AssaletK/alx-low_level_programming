@@ -8,14 +8,18 @@
 
 int main(void)
 {
-	int c;
+	int i;
 
-	for (c = 48; c <= 57; c++)
+	for (i = 48; i <= 57; i++)
 	{
-		putchar(c);
-		putchar(44);
-		putchar(32);
+		putchar(i);
+		if (i != 57)
+		{
+			putchar(44);
+			putchar(32);
+		}
+		else
+		putchar('\n');
 	}
-	putchar('\n');
 	return (0);
 }
