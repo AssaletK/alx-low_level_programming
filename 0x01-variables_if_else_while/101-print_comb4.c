@@ -1,44 +1,45 @@
-#include <stdio.h>
-/**
-* main - main function
-*
-* Return: 0
-*/
 
+#include <stdio.h>
+
+/**
+ * main - Prints numbers between 012 to 789.
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-	int i, j, k;
+	int i, e, g;
 
-	j = 48;
-	k = 48;
 	i = 48;
+	e = 48;
+	g = 48;
 
-	while (i < 58)
+	while (e < 58)
 	{
-		j = 48;
-		while (j < 58)
+		i = 48;
+		while (i < 58)
 		{
-			k = 48;
-			while (k < 58)
+			g = 48;
+			while (g < 58)
 			{
-				if (i != j && j != k && i != k && i < j && j < k)
+				if (e != i && e != g && i != g && e < i && i < g)
 				{
+					putchar(e);
 					putchar(i);
-					putchar(j);
-					putchar(k);
-					if (i == 55 && j == 56 && k == 57)
+					putchar(g);
+					if (i == 56 && e == 55 && g == 57)
 					{
 						break;
 					}
-					putchar(44);
-					putchar(32);
+					putchar(',');
+					putchar(' ');
 				}
+				g++;
 			}
-			k++;
+			i++;
 		}
-		j++;
+		e++;
 	}
-	i++;
 	putchar('\n');
 	return (0);
 }
