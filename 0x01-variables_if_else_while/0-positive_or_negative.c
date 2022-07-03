@@ -1,16 +1,20 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there */
 
-/* betty style doc for function main goes there */
+/**
+* main - sign of radom number
+*
+* Return: 0
+*/
+
 int main(void)
 {
 	int n;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	/* your codes goes there */
+
 	if (n < 0)
 	{
 		printf("%d is negative\n", n);
