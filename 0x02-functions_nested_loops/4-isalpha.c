@@ -5,7 +5,7 @@
 *
 * @c: is a ASCII character
 *
-* Return: 1 if letter. 0 if not
+* Return: 1 if letter. 0 if not letter
 */
 
 int _isalpha(int c)
