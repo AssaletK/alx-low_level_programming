@@ -5,7 +5,7 @@
 *
 * @c: is a ASCII character
 *
-* Return 1 if c is letter, uppercase or lowercase or 0 if not
+* Return: 1 if letter. 0 if not
 */
 
 int _isalpha(int c)
@@ -19,5 +19,4 @@ int _isalpha(int c)
 		return (0);
 	}
 	_putchar('\n');
-	return (0);
 }
