@@ -12,3 +12,7 @@ void jack_bauer(void);
 void times_table(void);
 void print_times_table(int n);
 int mul(int a, int b);
+void print_most_numbers(void);
+void print_numbers(void);
+int _isdigit(int c);
+int _isupper(int c);
